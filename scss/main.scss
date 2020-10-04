@@ -484,7 +484,7 @@ body{
     width:auto;
     display:inline-block;
     position:relative;
-    background: url('../../img/hero.png');
+    background: url('../img/hero.png');
     background-size: cover;
 
     .heroImg {
@@ -510,27 +510,27 @@ body{
       }
 
       &.about{
-          background-image: url('../../img/about-us.png');
+          background-image: url('../img/about-us.png');
       }
 
       &.teams{
-          background-image: url('../../img/teams.png');
+          background-image: url('../img/teams.png');
       }
 
       &.locations{
-          background-image: url('../../img/locations.png');
+          background-image: url('../img/locations.png');
       }
 
       &.life{
-          background-image: url('../../img/life.png');
+          background-image: url('../img/life.png');
       }
 
       &.careers{
-          background-image: url('../../img/early-careers.png');
+          background-image: url('../img/early-careers.png');
       }
 
       &.application{
-          background-image: url('../../img/application.png');
+          background-image: url('../img/application.png');
       }
   }
 }
