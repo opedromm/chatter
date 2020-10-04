@@ -1,0 +1,74 @@
+@import "breakpoints.scss";
+
+// for heights
+.h-100{
+	height:100%;
+}
+.h-50{
+	height:50%;
+}
+
+// block scroll
+.noScroll{
+	overflow: hidden;
+}
+
+// to hide text visually but still has a semantic impact
+.hiddenText{
+    text-indent:100%;
+    line-height:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    display:block;
+    font-size:0;
+    *display:none
+}
+
+// Hide on mobile and small tablet
+.hidden-mobile{
+	@media only screen and (min-width: 320px) and (max-width: 600px){
+	    display: none;
+	}
+}
+
+// Hide on mobile
+.hidden-xs{
+	@include screen-xs(){
+        display: none;
+    }
+}
+
+// Hide on small tablet
+.hidden-xs-sm{
+	@include screen-xs-sm(){
+        display: none;
+    }
+}
+
+// Hide on tablet
+.hidden-sm{
+    @include screen-sm(){
+        display: none;
+    }
+}
+
+// Hide on small desktop
+.hidden-md{
+    @include screen-md(){
+        display: none;
+    }
+}
+
+// Hide on desktop
+.hidden-lg{
+    @include screen-lg(){
+        display: none;
+    }
+}
+
+// Hide on big desktop
+.hidden-xl{
+    @include screen-xl(){
+        display: none;
+    }
+}

@@ -1,0 +1,62 @@
+// Extra large devices (XXL desktops, 1440px and up)
+$screen-xxl-min: 1440px;
+
+// Extra large devices (large desktops, 1200px and up)
+$screen-xl-min: 1200px;
+
+// Large devices (desktops, 992px and up)
+$screen-lg-max: ($screen-xl-min - 1);
+$screen-lg-min: 992px;
+
+// Medium devices (tablets, 768px and up)
+$screen-md-max: ($screen-lg-min - 1);
+$screen-md-min: 768px;
+
+// Small devices (landscape phones, 544px and up)
+$screen-sm-max: ($screen-md-min - 1);
+$screen-sm-min: 544px;
+
+// Extra small devices (portrait phones, less than 544px)
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-xs-min: 320px;
+
+@mixin screen-xs {
+	@media (max-width: $screen-xs-max){
+		@content;
+	}
+}
+@mixin screen-sm {
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+		@content;
+	}
+}
+@mixin screen-md {
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		@content;
+	}
+}
+@mixin screen-lg {
+	@media (min-width: $screen-lg-min) and (max-width: $screen-lg-max){
+		@content;
+	}
+}
+@mixin screen-xl {
+	@media (min-width: $screen-xl-min){
+		@content;
+	}
+}
+
+@mixin screen-xxl {
+	@media (min-width: $screen-xxl-min){
+		@content;
+	}
+}
+
+
+
+// Apply to mobile and tablet resolutions
+@mixin screen-xs-sm {
+	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
+		@content;
+	}
+}
